@@ -1,0 +1,1724 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+/* Global styling for the body and font sizes */
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Use of CSS unit rem instead of pixels learned from Kevin Powell's YouTube tutorial (see README Credits section) */
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+/* Styles for the links and buttons */
+.link-demo {
+    background: #f9ad1d;
+    padding-left: 0.4rem; 
+    padding-right: 0.4rem;
+    border: none;
+    border-radius: 20px;
+    max-width: max-content;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.link-login {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.4rem;
+    background: #000;
+    border-radius: 20px;
+    max-width: max-content;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-login:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: #aa0047;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 20px;
+    max-width: max-content;
+    cursor: pointer;
+}
+
+.btn-large {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #aa0047;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem;
+    max-width: max-content;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.btn-large:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer; 
+}
+
+.btn-small {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #aa0047;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    max-width: max-content;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn-small:hover {
+    background-color: #f9ad1d;
+    color: #000;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer; 
+}
+
+.btn-outro {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #aa0047;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    max-width: max-content;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn-outro:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer; 
+} 
+
+/* header and navigation section styling */
+/* navbar styling using flex for responsiveness */
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    justify-content: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+}
+
+.navbar ul li a:hover{
+    color: #aa0047;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer; 
+}
+
+/* style to size the logo */
+.logo {
+    width: 12.75rem;
+    height: 1.87rem;
+}
+
+/* style for the hamburger icon menu for smaller screens*/
+.hamburger-icon {
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    display: none;
+    text-decoration: none;
+}
+
+.hamburger-icon:hover {
+    color: #aa0047;
+}
+
+.hamburger-icon:active {
+    color: #aa0047;
+}
+
+/* hero section, created using Vectary Studio 2020, with responsive iframe */ 
+/* call to action above the augmented reality hero with autoprefixes */
+#hero-cta {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background: #000;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+
+/* animation for the call to action above the hero section */
+@keyframes slide {
+    from {
+        transform: translateY(2rem)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
+/* styling for the hero section */
+.hero-interactive {
+    position: relative;
+    padding-top: 0; 
+    padding-bottom: 56.25%;
+    overflow: hidden; 
+    text-align: center;
+}
+
+/* styling for the embedded iframe 
+*  with background image for devices with no augmented reality capability
+*/
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-image: url("../images/neomorphic-bg.webp");
+}
+
+/* styles for the about us section using flex for responsiveness */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.about-blurb {
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+/* additional styling to emphasize the vr and ar text */
+.vrar-color {
+    color: #aa0047;
+}
+
+.more-about {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.divider {
+    width: 60px;
+    height: 5px;
+    border: 0;
+    background-color: #c0a321;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.about-container a {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+/* styles for the services section on the home page */
+/* styling for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "services services services"
+        "woman consulting digital-woman"
+        "vrar hands tna";
+    background-color: whitesmoke;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+/* styling for the contents of the grid container */
+.services {
+    grid-area: services;
+    color: #000;
+    font-size: 2.5rem;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.consulting-text {
+    color: #f9ad1d;
+    text-transform: uppercase;
+}
+
+.services-intro {
+    font-size: 1.25rem;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    text-align: center; 
+    margin-top: -0.625rem;
+}
+
+.consulting {
+    display: grid;
+    grid-area: consulting;
+    align-content: center;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 1rem; 
+}
+
+.tna {
+    display: grid;
+    grid-area: tna;
+    align-content: center;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+}
+
+.woman {
+    grid-area: woman;
+    max-width: 100%; 
+}
+
+.digital-woman {
+    grid-area: digital-woman;
+    max-width: 100%; 
+}
+
+.hands {
+    grid-area: hands;
+    max-width: 100%;
+}
+
+.vrar {
+    display: grid;
+    grid-area: vrar;
+    align-content: center;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+}
+
+.consulting p,
+.vrar p,
+.tna p {
+    line-height: 1.5rem;
+    padding: 0.5rem;
+}
+
+.consulting ul,
+.vrar ul,
+.tna ul {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+/* styles for the why vr section using flex for responsiveness */
+.why-vr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    background-color: #ffd6e7;
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+/* styles for the why ar section using flex for responsiveness */
+.why-ar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    background-color: thistle;
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+/* styles for both the vr and ar sections using flex */
+.vrar-intro {
+    flex-direction: row;
+    font-size: 1.875rem;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.vrar-intro p {
+    font-size: .8rem;
+    margin: 0.5rem;
+    padding-top: 1rem;
+}
+
+.vrar-numbers-intro {
+    color: #aa0047;
+    margin-left: 1rem;
+}
+
+.vrar-numbers {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vrar-numbers h2 {
+    color: #aa0047;
+}
+
+.vrar-numbers p {
+    margin-left: 1rem;
+    padding-right: 0.5rem;
+} 
+
+/* styles for the sample works section on the home page using flex for responsiveness */
+.work-intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.875rem;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 3rem;
+    padding-top: 2rem;
+}
+
+/* styles for the cards container using fles for responsiveness */
+.work-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+/* styles for each of the four cards */
+.work-card {
+    width: 18.5rem;
+    height: 28.125rem;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    margin: 0 auto;
+}
+
+/* styles for content of each of the cards */
+.work-one,
+.work-two,
+.work-three,
+.work-four {
+    align-content: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.work-one h4,
+.work-two h4,
+.work-three h4,
+.work-four h4 {
+    padding-top: 1rem;
+    font-weight: 700;
+}
+
+/* styles for the images on the first two cards */
+.img-one {
+    background: url(../images/training-workshop.webp) no-repeat;
+    height: 12.5rem;
+    background-size: 100%;
+}
+
+.img-two {
+    background: url(../images/digital-twin.webp) no-repeat;
+    height: 12.5rem;
+    background-size: 100%;
+}
+
+/* styles for the embedded videos on the last two cards */
+.video {
+    height: 12.5rem;
+    background-size: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* styles for the sample clients section using flex for responsiveness */
+.clients {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    background-color: rgb(233, 230, 230);
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+.clients-intro {
+    font-size: 30px;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* styles for the sample clients' logos using flex */
+.clients-logo {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* styles for the client testimonials section using flex */
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    margin: 2rem; 
+    padding-top: 2rem;
+}
+
+/* this centers the quotes intro section and adds padding to the top */
+.quote-intro {
+    font-size: 1.875px;
+    font-family: "Fira Sans", sans-serif;
+    color: #aa0047;
+    text-align: center;
+    padding-top: 1rem;
+} 
+
+/* this centers the quotation marks around the testimonials quotes and uses flex */
+.quote-mark {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    color: #aa0047;
+    margin-bottom: 2rem;
+}    
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    margin: 1rem;
+}
+
+.testimonials {
+    width: 25rem;
+    margin: 1rem;
+}
+
+/*styles for the signups container using flex for responsivness */
+.subscribe {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    background: #484747;
+}
+
+.subscribe-container {
+    width: 40rem;
+    margin: 2rem;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+}
+
+.subscribe-container h3 {
+    color: #f9ad1d;
+}
+
+.subscribe-container p {
+    margin-bottom: 2rem;
+}
+
+.subscribe-short {
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    padding-bottom: 1rem;
+}
+
+.contact-input {
+    margin-bottom: 1rem;
+}
+
+/* this begins the styling for the services page */
+/* styles for services page hero section using flex */
+.services-bg {
+    height: 25rem;
+    background-image: url("../images/txr-bg-dark3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.page-container {
+    background: rgba(250, 250, 250, 0.2);
+    border-radius: 5px;
+    margin: auto;
+    width: 35rem;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}    
+
+.page-intro,
+.page-blurb {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* this centers the text and adds padding and margin for the intro */
+.solutions-intro {
+    font-size: 1.2rem;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    padding-top: 2rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.solutions-intro p {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.solutions-intro ul {
+    list-style-type: none;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    text-align: start;
+}
+
+/* styles for the advisory services container using grid */
+.advisory-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 0 1rem;
+    grid-template-areas: 
+    "advisory advisory advisory"
+    "advisory-a advisory-b advisory-c";
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    background-color: whitesmoke;
+}
+
+/* styles for the advisory services grid contents */
+.advisory {
+    grid-area: advisory;
+    text-align: center;
+    justify-content: center;
+    color: #aa0047;
+}
+
+.advisory-a {
+    grid-area: advisory-a;
+}
+
+.advisory-b {
+    grid-area: advisory-b;
+}
+
+.advisory-c {
+    grid-area: advisory-c;
+}
+
+.advisory-a,
+.advisory-b,
+.advisory-c {
+    text-align: center;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+/* styles for the content of the card used for services by industry section */
+/* note that the card containers reused code used on the sample works section on the home page */
+.by-industry-card {
+    width: 22rem;
+    height: 30rem;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2); 
+    margin: 3rem;
+    background-color: #fff;
+}
+
+.industry-list {
+    align-content: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem; 
+}
+
+.industry-list h4 {
+    padding-top: 1.5rem;
+    font-weight: 700;
+    color: #aa0047;
+}
+
+/* styles for the images used on the cards */
+.hospitals-img {
+    background-image: url(../images/surgery-sim.webp);
+    height: 11.25rem; 
+    background-size: 100%;
+}
+
+.life-sciences-img {
+    background-image: url(../images/life_sciences_pharma.webp);
+    height: 11.25rem; 
+    background-size: 100%; 
+}
+
+.manufacturing-img {
+    background-image: url(../images/manufacturing.webp);
+    height: 11.25rem; 
+    background-size: 100%; 
+}
+
+.mining-img {
+    background-image: url(../images/mining-sim.webp);
+    height: 11.25rem; 
+    background-size: 100%;
+}
+
+.oil-img {
+    background-image: url(../images/mining-sim.webp);
+    height: 11.25rem; 
+    background-size: 100%;
+}
+
+.transportation-img {
+    background-image: url(../images/transport.webp);
+    height: 11.25rem; 
+    background-size: 100%;
+}
+
+/* styles for the vr/ar use cases using flex for responsiveness */
+.use-case-intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.875rem;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 3rem;
+    padding-top: 2rem;
+}
+
+/* styles for the use cases card container */
+.use-case-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    background-color: #b3718c;
+    margin: 0 auto;
+    padding-top: 2rem;;
+}
+
+.use-case-card {
+    width: 16.5rem;
+    height: 19.25rem;
+    background-color: #fff;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.use-case-card:hover {
+    transform: scale(1.025);
+    transition: all 0.5s ease-in 0s;
+    cursor: pointer;   
+}
+
+/* styles for content of each of the cards */
+.use-case-text {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* styling for the services page closing text */
+.page-outro {
+    text-align: center;
+    background: #f9ad1d;
+    padding: 3rem;
+}
+
+.page-outro h2 {
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.page-outro h3, 
+.page-outro p {
+    color: #000;
+}
+
+.page-outro a {
+    color: #000;
+    cursor: pointer;
+}
+
+/* this starts the styles for the about us page*/
+/* styles for the hero section of the about us page using flex */
+.about-bg {
+    height: 25rem;
+    width: 100%;
+    background-image: url("../images/txr-bg-dark4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* styles for the introduction section on the about us page using flex for responsiveness */
+.team-txr {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    background-color: whitesmoke;
+}
+
+.team-txr h2 {
+    color: #aa0047;
+}
+
+/* note that the video container reused code used on the hero section of the home page */
+/* style to fix the corporate video to the container 
+*  this also satisfies the iframe aspect ratio requirements
+*/
+.corporate-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: 0;
+}
+
+/* styles for the about us page outro */
+.txr-color {
+    color: #f9ad1d;
+}
+
+/* additional styling to the outro button font colour 
+* so that text provides better contrast with background on hover
+*/
+#plus {
+    color: #fff;
+}
+
+/* start of styling for the contact us page */
+/* styling for the hero section of contact us page using flex for responsiveness */
+.contact-bg {
+    height: 25rem;
+    width: 100%;
+    background-image: url("../images/txr-bg-dark5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* styles for the contact us page form begins here */
+/* using flex, the form is responsive on smaller device up to 280px screen size */
+.contact_form-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    background: #484747;
+    background-size: cover;
+}
+
+/* styling for the form container */
+.contact_form-container {
+    max-width: 90%;
+    margin: 2rem;
+    padding: 1rem;
+    color: #000;
+}
+
+/* styling for the form container contents */
+.contact_form-container h3 {
+    color: #f9ad1d;
+}
+
+.contact_form-container p {
+    color: #fff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.contact-input,
+#message {
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.book-demo-color {
+    color: #f9ad1d;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+#book-demo {
+    color: #aa0047;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+#txr-team {
+    margin-bottom: 2rem;
+}
+
+/* styling for google map section */
+.map-header {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem auto;
+}
+
+/* container styling for the embedded google map */
+.map {
+    position: relative;
+    padding-top: 0; 
+    padding-bottom: 50%;
+    overflow: hidden; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.responsive-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border: 0;
+    margin: 1rem auto;
+}
+
+/* start of the styling for the login page */
+/* login-form styling using flex for responsiveness */
+.login-form {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login_form-container {
+    max-width: 50%;
+    padding: 1rem;
+    margin: 0 auto;
+    color: #000;
+}
+
+/* start of the footer section styling */
+/* used autoprefix to hide overflow on Firefox browser on mobile */
+.footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%; 
+    overflow: -moz-hidden-unscrollable; 
+}
+
+/* footer container styling using flex for responsiveness and aligning items */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}    
+
+/* svg logo on the footer styling */
+.footer-logo {
+    background-size: 100%;
+    width: 17rem;
+    height: 1.7rem;
+    margin: 1rem;
+}
+
+/* this centers the social media Font Awesome icons and provides contrast with the black background */
+.social-networks i {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+
+/* footer jeaders styling to add margin and set width */
+.footer-about,
+.footer-services,
+.footer-contact {
+    width: 19rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 1rem; 
+}  
+
+/* footer fonts styling */
+.footer-about p {
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+.footer-services h3,
+.footer-contact h3 {
+    font-size: 1.2rem;
+    margin-block-start: 0;
+    text-align: left; 
+    margin: 1rem;
+    text-transform: uppercase;
+    color: #f9ad1d;
+}
+
+/*  links styling to align items and remove text decoration */
+.footer-services ul {
+    list-style: none;
+    padding-inline-start: 1rem;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding-inline-start: 0;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.footer-services li,
+.footer-contact li {
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-top: 1rem; 
+}
+
+.footer-services li {
+    text-transform: uppercase;
+}
+
+.footer-services a,
+.footer-contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact i {
+    color: white; 
+    padding-right: 1rem; 
+}
+
+/*  copyright section styling */
+.copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+  
+/* media queries for screen sizes ranging from 280px to 1100px and above */
+
+@media screen and (min-width: 280px) {
+    body {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+        overflow-x: hidden; 
+    }   
+
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+
+    .navbar-ul.show {
+        display: flex;
+    }
+
+    .navbar-ul li {
+        font-size: 1.2rem;
+        padding: 1rem 0.5rem;
+    } 
+
+    .navbar-ul a {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .hamburger-icon {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        order: 2;
+    }
+
+    .btn-nav-login {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+        order: 1;
+    }    
+
+    .link-login {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "services"
+            "woman" 
+            "consulting" 
+            "digital-woman"
+            "vrar" 
+            "hands" 
+            "tna";
+        background-color: whitesmoke;
+        overflow: hidden;
+        padding-bottom: 3rem;
+        margin: 0 auto;
+    }
+    
+    .services {
+        grid-area: services;
+        color: #000;
+        font-size: 2.5rem;
+        font-family: "Fira Sans", sans-serif;
+        text-align: center;
+        background-color: whitesmoke;
+        padding-top: 2.5rem;
+    }
+    
+    .services-intro {
+        font-size: 1.25rem;
+        font-family: "Fira Sans", sans-serif;
+        color: #000;
+        text-align: center; 
+        margin-top: -0.625rem;
+    }
+    
+    .consulting {
+        display: grid;
+        grid-area: consulting;
+        align-content: center;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 1rem; 
+    }
+    
+    .tna {
+        display: grid;
+        grid-area: tna;
+        align-content: center;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .woman {
+        display: flex;
+        justify-content: center;
+        grid-area: woman;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+    
+    .digital-woman {
+        display: flex;
+        justify-content: center;
+        grid-area: digital-woman;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+    
+    .hands {
+        display: flex;
+        justify-content: center;
+        grid-area: hands;
+        max-width: 100%;
+    }
+    
+    .vrar {
+        display: grid;
+        grid-area: vrar;
+        align-content: center;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .consulting p,
+    .vrar p,
+    .tna p {
+        line-height: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .consulting ul,
+    .vrar ul,
+    .tna ul {
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    
+    .consulting-text {
+        font-size: 1rem;
+        color: #f9ad1d;
+        text-transform: uppercase;
+    }
+
+    .why-ar,
+    .why-vr {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .why-ar h2 {
+        display: flex;
+        font-size: 1.75rem;
+    }
+
+    .why-ar h3 {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .why-ar p {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .vrar-intro h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.75rem;
+        margin: 0 auto;
+    }
+
+    .vrar-intro h3 {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        margin-left: auto;
+    }
+
+    .vrar-intro p {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .vrar-numbers {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    .work-card {
+        width: 17.5rem;
+        height: 28.125rem;
+        border: 1px solid rgb(161, 161, 161);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    .work-intro,
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .work-one,
+    .work-two,
+    .work-three,
+    .work-four {
+        padding: 0.5rem;
+    }
+
+    .advisory,
+    .advisory-container,
+    .advisory-a,
+    .advisory-b,
+    .advisory-c {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .by-industry-card,
+    .industry-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .industry-list {
+        width: 16rem;
+        height: 32rem;
+        margin: 0.5rem;
+    }  
+
+    .clients-logo {
+        margin: 0 auto;
+    }
+
+    .login_form-container {
+        max-width: 70%;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-ul.show {
+        display: flex;
+    }
+
+    .navbar-ul li {
+        font-size: 1.2rem;
+        padding: 1rem 0.5rem;
+    } 
+
+    .navbar-ul a {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+    }
+
+    .hamburger-icon {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        order: 2;
+    }
+
+    .link-login {
+        display: flex;
+    }
+
+    .link-login:hover {
+        color: #fff;
+        background: #aa0047;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "services services services"
+            "woman consulting digital-woman"
+            "vrar hands tna";
+        background-color: whitesmoke;
+        overflow: hidden;
+        padding-bottom: 3rem;
+        margin: 1rem;
+    }
+
+    .services {
+        grid-area: services;
+        color: #000;
+        font-size: 2.5rem;
+        font-family: "Fira Sans", sans-serif;
+        text-align: center;
+        background-color: whitesmoke;
+        padding-top: 2.5rem;
+    }
+
+    .consulting-text {
+        color: #f9ad1d;
+        text-transform: uppercase;
+    }
+
+    .services-intro {
+        font-size: 1.25rem;
+        font-family: "Fira Sans", sans-serif;
+        color: #000;
+        text-align: center; 
+        margin-top: -0.625rem;
+    }
+
+    .consulting {
+        display: grid;
+        grid-area: consulting;
+        align-content: center;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 1rem; 
+    }
+
+    .tna {
+        display: grid;
+        grid-area: tna;
+        align-content: center;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 1rem;
+    }
+
+    .woman {
+        grid-area: woman;
+        max-width: 100%; 
+    }
+
+    .digital-woman {
+        grid-area: digital-woman;
+        max-width: 100%; 
+    }
+
+    .hands {
+        grid-area: hands;
+        max-width: 100%;
+    }
+
+    .consulting p,
+    .vrar p,
+    .tna p {
+        line-height: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .consulting ul,
+    .vrar ul,
+    .tna ul {
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    .vrar {
+        display: grid;
+        grid-area: vrar;
+        align-content: center;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .why-ar,
+    .why-vr {
+        display: flex;
+        margin: 1rem;
+    }
+    .vrar-intro h2 {
+        font-size: 2.75rem;
+    }
+
+    .vrar-intro h3 {
+        font-size: 1.75rem;
+    }
+
+    .vrar-intro p{
+        padding: 2rem;
+    }
+
+    .vrar-numbers-intro,
+    .vrar-numbers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .clients,
+    .clients-logo {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .advisory-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 0 1rem;
+        grid-template-areas: 
+        "advisory advisory advisory"
+        "advisory-a advisory-b advisory-c";
+        margin: 0 auto;
+        padding: 1rem;
+        width: 95%;
+        background-color: whitesmoke;
+    }
+
+    .advisory {
+        grid-area: advisory;
+        text-align: center;
+        justify-content: center;
+        color: #aa0047;
+    }
+
+    .advisory-a {
+        grid-area: advisory-a;
+    }
+
+    .advisory-b {
+        grid-area: advisory-b;
+    }
+
+    .advisory-c {
+        grid-area: advisory-c;
+    }
+
+    .advisory-a,
+    .advisory-b,
+    .advisory-c {
+        text-align: center;
+        border: 1px solid rgb(161, 161, 161);
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    .login_form-container {
+        max-width: 40%;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+        
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1; 
+        width: 55%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        padding-inline-start: 0;
+    }
+
+    .navbar-ul li {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    } 
+
+    .navbar-ul a {
+        display: flex;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .link-login {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    .link-login:hover {
+        color: #fff;
+        background: #aa0047;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .by-industry-card,
+    .industry-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .industry-list {
+        width: 18rem;
+        height: 30rem;
+        margin: 1rem;
+    }
+}
